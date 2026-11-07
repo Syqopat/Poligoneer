@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poligoneer"
+version = "0.1.0"
+description = "Split high-poly models into pieces under a triangle limit that reassemble in place."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = []
+
+[project.scripts]
+poligoneer = "poligoneer.cli:main"
+
+[tool.setuptools]
+packages = ["poligoneer"]
